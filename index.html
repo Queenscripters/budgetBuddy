@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Define the character set used in the document: typically used for english setting with symbols, and emojis support -->
+    <meta charset="UTF-8">
+    <!-- Define the keywords for SEO -->
+    <meta name="keywords" content="finances, budget, currency, entrepreneurship, money">
+    <!-- Define the site description -->
+    <meta name="description" content="Expenses tracker for personal finances">
+    <!-- Set the viewport so that website is responsive to difference device screen dimensions/sizes -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Budget Buddy</title>
+    <!-- STYLES - added in the head section, and inline -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <!-- Google Font Api Import -->
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap" rel="stylesheet">
+    <style>
+       
+        body{
+            display: flex; 
+            flex-direction: column;
+            margin: 0;
+            padding: 0;
+            font-family: 'Roboto', sans-serif;
+
+
+        }
+        header{
+            text-align: center;
+            height: 200px;
+            background-image: url("https://images.unsplash.com/photo-1580519542036-c47de6196ba5?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MXx8Y3VycmVuY3l8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=60");
+            background-size: cover; 
+            background-repeat: no-repeat;
+            background-position: center;
+            font-family: 'Abril Fatface', cursive;
+        }
+        h2{
+            font-weight: 700;
+        }
+        #intro{
+            backdrop-filter: blur(1px);
+            background-color: #52762d8f;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+            justify-content: center;
+            color: rgb(16, 31, 0);
+            font-size: 360%;
+            opacity: .9;
+        }
+        nav{
+            position: sticky; 
+            top: 0; 
+            background-color: rgba(74, 98, 24, .6);
+        }
+        ul, li, a{
+            list-style: none;
+            text-decoration: none; 
+            font-size: 1rem;
+            color: rgb(1, 34, 1);
+            padding: 0;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+        }
+        li:hover{
+            opacity: .6;
+            font-weight: 700;
+        }
+        section{
+            padding: 10px;
+        }
+        .dividers{
+            margin: 5% 0 10%;
+        }
+        table, th, td{
+            border: 4px solid rgb(1, 34, 1);
+            border-collapse: collapse;
+            width: 100%;
+        }
+        th, td{
+            padding: 5px; 
+            text-align: left;
+        }
+        footer{
+            color: white;
+            display: flex;
+            flex-direction: column;
+            background-color: rgb(16, 31, 0);
+            padding: 10px;
+        }
+        footer > div > ul, li, a{
+            display: block;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <span id="intro"> The Budget Buddy </span>
+    </header>
+    <!-- Navbar Section -->
+    <nav>
+        <ul>
+            <li>
+                <a href="#">Home</a>
+            </li>
+            <li>
+                <a href="#budget">Budget</a>
+            </li>
+            <li>
+                <a href="#invest">Investments</a>
+            </li>
+            <li>
+                <a href="#strategies">Strategies</a>
+            </li>
+            <li>
+                <a href="#notes">Notes</a>
+            </li>
+        </ul>
+    </nav>
+    <!-- Main Section -->
+    <main>
+       
+        <!-- Budget Section -->
+        <div class="dividers"  id="budget"></div>
+        <section>
+             
+            <h2>My Budget</h2>
+            <!-- Table of Future Expenses -->
+            <table>
+                <tr>
+                    <th> Name of Item</th>
+                    <th> Average Spend</th>
+                    <th> Average Income</th>
+                </tr>
+                <tr>
+                    <td> Hard Drive</td>
+                    <td> $50 per month on cloud storage total</td>
+                    <td> $20 on advertisements</td>
+                </tr>
+            </table>
+
+        </section>
+           
+        <!-- Investments Section -->
+        <div class="dividers" id="invest"></div>
+        <section >
+            <h2>My Investments</h2>
+            <!-- Table of Investments -->
+            <table>
+                <tr>
+                    <th> Name of Investment</th>
+                    <th> Average Cost</th>
+                    <th> Average Future ROI</th>
+                </tr>
+                <tr>
+                    <td> Education subscription</td>
+                    <td> $120 per year access</td>
+                    <td> Freelance gigs starting at $1,500</td>
+                </tr>
+            </table>
+
+        </section>
+        <!-- Strategies Section -->
+        <div class="dividers"  id="strategies"></div>
+        <section>
+            <h2>My Strategies</h2>
+             <!-- Table of investment strategies -->
+             <table>
+                <tr>
+                    <th> Stocks</th>
+                    <th> Bonds</th>
+                    <th> Crypto</th>
+                </tr>
+                <tr>
+                    <td> Stock names: TSLA, WLMRT, ZNGA</td>
+                    <td> Bonds... More research needed</td>
+                    <td> Crypto... More research needed</td>
+                </tr>
+            </table>
+        </section>
+        <!-- Notes Section -->
+        <div class="dividers" id="notes"></div>
+        <section >
+            <h2>My Notes</h2>
+                <!-- Table of Notes -->
+                <table>
+                    <tr>
+                        <th> Title</th>
+                        <th> Text</th>
+                        <th> Date</th>
+                    </tr>
+                    <tr>
+                        <td> I love saving money!</td>
+                        <td> This budget buddy has allowed me to be more aware of my money spending habits. 
+                            I am so grateful to be able to be held accountable for the money I spend!
+                        </td>
+                        <td> 12/12/2020</td>
+                    </tr>
+                    <tr>
+                        <td> The Budget Buddy Saves Pockets</td>
+                        <td> I am now a millionaire!
+                        </td>
+                        <td> 1/12/2021</td>
+                    </tr>
+                </table>
+
+       </section>
+        
+            
+        <!-- Reach Goal: embedded calculator -->
+        <!-- Reach Goal: server/database to hold notes -->
+    </main>
+    <!-- Footer Section -->
+    <footer>
+        <div>
+            <h5> Site Links</h5>
+            <ul>
+                <li>
+                    <a href="#">Home</a>
+                </li>
+                <li>
+                    <a href="#budget">Budget</a>
+                </li>
+                <li>
+                    <a href="#invest">Investments</a>
+                </li>
+                <li>
+                    <a href="#strategies">Strategies</a>
+                </li>
+                <li>
+                    <a href="#notes">Notes</a>
+                </li>
+            </ul>
+        </div>
+        <div>
+            <h5> Additional Links</h5>
+            <ul>
+                <li>
+                    <a href="#">Stocks</a>
+                </li>
+                <li>
+                    <a target="_blank" href="#">Cryptocurrency</a>
+                </li>
+                <li>
+                    <a target="_blank" href="#">Bonds</a>
+                </li>
+                <li>
+                    <a target="_blank" href="#">Finance Coaches</a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+    
+</body>
+</html>
